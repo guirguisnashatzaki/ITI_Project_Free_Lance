@@ -1,4 +1,4 @@
-package org.itiprojectindeed.Guirguis;
+package org.itiprojectindeed;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -13,7 +13,6 @@ import com.google.api.services.gmail.model.Message;
 
 import java.io.*;
 import java.nio.file.*;
-import java.security.GeneralSecurityException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

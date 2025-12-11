@@ -1,7 +1,5 @@
-package Guirguis;
-
-import org.itiprojectindeed.Guirguis.GmailOtpFetcher;
-import org.itiprojectindeed.Guirguis.LoginFree;
+import org.itiprojectindeed.GmailOtpFetcher;
+import org.itiprojectindeed.LoginFree;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -45,7 +43,7 @@ public class Send_Proposal_Test extends BaseTest {
         loginPage.goToLoginPage();
         loginPage.login("gogonashatzaki@gmail.com", "Gogo_5401519");
 
-        org.itiprojectindeed.Guirguis.GmailOtpFetcher f = new GmailOtpFetcher();
+        GmailOtpFetcher f = new GmailOtpFetcher();
         String otp = f.waitForOtp("from:(no-reply@Freelance Yard.com) OR subject:(verification OR code)", 120000, 3000);
         System.out.println("Retrieved OTP: " + otp);
 

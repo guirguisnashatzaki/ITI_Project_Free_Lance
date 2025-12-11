@@ -1,6 +1,4 @@
-package Guirguis;
-
-import org.itiprojectindeed.Guirguis.Register_Free_Lance_Page;
+import org.itiprojectindeed.Register_Free_Lance_Page;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

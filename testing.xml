@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Freelance Yard - Client Registration Test Suite" parallel="false" verbose="1">
+
+    <!-- Complete Test Suite - All 25 Tests -->
+    <test name="Complete Registration Tests - Chrome" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest"/>
+        </classes>
+    </test>
+
+    <!-- Positive Tests Only - 5 Tests -->
+    <test name="Positive Tests Only" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testPageLoad"/>
+                    <include name="testValidRegistration"/>
+                    <include name="testValidCorporateRegistration"/>
+                    <include name="testValidNgoRegistration"/>
+                    <include name="testValidIndividualRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Tests Only - 20 Tests -->
+    <test name="Negative Tests Only" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testEmptyFormSubmission"/>
+                    <include name="testMissingCompanyName"/>
+                    <include name="testMissingFirstName"/>
+                    <include name="testMissingLastName"/>
+                    <include name="testInvalidEmail"/>
+                    <include name="testMissingEmail"/>
+                    <include name="testWeakPassword"/>
+                    <include name="testMissingPassword"/>
+                    <include name="testMissingPhone"/>
+                    <include name="testMissingCompanyType"/>
+                    <include name="testAllCompanyTypes"/>
+                    <include name="testEmailWithoutAtSymbol"/>
+                    <include name="testEmailWithDoubleAtSymbol"/>
+                    <include name="testPasswordOnlyNumbers"/>
+                    <include name="testPasswordOnlyLetters"/>
+                    <include name="testMaximumFieldLength"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Required Fields Tests - 9 Tests -->
+    <test name="Required Fields Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testEmptyFormSubmission"/>
+                    <include name="testMissingCompanyName"/>
+                    <include name="testMissingFirstName"/>
+                    <include name="testMissingLastName"/>
+                    <include name="testMissingEmail"/>
+                    <include name="testMissingPassword"/>
+                    <include name="testMissingPhone"/>
+                    <include name="testMissingCompanyType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Email Validation Tests - 4 Tests -->
+    <test name="Email Validation Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testInvalidEmail"/>
+                    <include name="testMissingEmail"/>
+                    <include name="testEmailWithoutAtSymbol"/>
+                    <include name="testEmailWithDoubleAtSymbol"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Password Validation Tests - 4 Tests -->
+    <test name="Password Validation Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testWeakPassword"/>
+                    <include name="testMissingPassword"/>
+                    <include name="testPasswordOnlyNumbers"/>
+                    <include name="testPasswordOnlyLetters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Company Type Tests - 2 Tests -->
+    <test name="Company Type Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testAllCompanyTypes"/>
+                    <include name="testMissingCompanyType"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Boundary Tests - 1 Test -->
+    <test name="Boundary Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testMaximumFieldLength"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Smoke Tests - Quick validation -->
+    <test name="Smoke Tests" preserve-order="true" enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ClientRegistrationTest">
+                <methods>
+                    <include name="testPageLoad"/>
+                    <include name="testValidRegistration"/>
+                    <include name="testEmptyFormSubmission"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Cross-Browser Testing (Uncomment to enable) -->
+    <!--
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.ClientRegistrationTest">
+                <methods>
+                    <include name="testPageLoad"/>
+                    <include name="testValidRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Edge Tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.ClientRegistrationTest">
+                <methods>
+                    <include name="testPageLoad"/>
+                    <include name="testValidRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    -->
+
+</suite>

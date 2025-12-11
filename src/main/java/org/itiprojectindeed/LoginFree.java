@@ -1,4 +1,4 @@
-package org.itiprojectindeed.Guirguis;
+package org.itiprojectindeed;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;

@@ -1,7 +1,4 @@
-package Guirguis;
-
-import org.itiprojectindeed.Guirguis.Home_Navigation_Page;
-import org.openqa.selenium.By;
+import org.itiprojectindeed.Home_Navigation_Page;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

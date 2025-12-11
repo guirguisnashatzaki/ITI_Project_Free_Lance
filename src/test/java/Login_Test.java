@@ -1,6 +1,4 @@
-package Guirguis;
-
-import org.itiprojectindeed.Guirguis.Login_Page;
+import org.itiprojectindeed.Login_Page;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;

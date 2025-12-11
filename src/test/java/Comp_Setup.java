@@ -1,9 +1,7 @@
-package Guirguis;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.itiprojectindeed.Guirguis.GmailOtpFetcher;
-import org.itiprojectindeed.Guirguis.Home_Navigation_Page;
-import org.itiprojectindeed.Guirguis.LoginFree;
+import org.itiprojectindeed.GmailOtpFetcher;
+import org.itiprojectindeed.Home_Navigation_Page;
+import org.itiprojectindeed.LoginFree;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
