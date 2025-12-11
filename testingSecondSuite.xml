@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyTestSuite">
+    <test name="Test1">
+        <classes>
+            <class name="Login_Test"/>
+            <class name="Register_Free_Lance_Test"/>
+            <class name="Home_Navigation_Test"/>
+            <class name="Comp_Setup"/>
+            <class name="Send_Proposal_Test"/>
+        </classes>
+    </test>
+</suite>

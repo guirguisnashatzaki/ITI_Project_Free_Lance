@@ -33,7 +33,7 @@ public class LoginFree {
     }
 
     public void goToLoginPage() {
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         try {
             driver.get("https://www.freelanceyard.com/en/home");
         } catch (TimeoutException e) {

@@ -24,7 +24,7 @@ public class Send_Proposal_Test extends BaseTest {
 
     LoginFree loginPage;
 
-    By view_Jobs_Button = By.xpath("//a[contains(@href, 'mtlob-to-do-list-bsyt')]");
+    By view_Jobs_Button = By.cssSelector("a[href='https://www.freelanceyard.com/en/jobs/presentation-7']");
 
 
     public void waitSeconds(WebDriver driver, int seconds) {
@@ -56,6 +56,7 @@ public class Send_Proposal_Test extends BaseTest {
     public void navigateToSendProposalPage() throws Exception {
         loginWithOtp();
         driver.findElement(By.linkText("Jobs")).click();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.findElement(view_Jobs_Button).click();
         driver.findElement(By.xpath("//a[normalize-space()='Send proposal']")).click();
     }
@@ -79,7 +80,7 @@ public class Send_Proposal_Test extends BaseTest {
     @Test
     public void UploadValidFile() {
         WebElement fileUpload = driver.findElement(attachFileInput);
-        fileUpload.sendKeys("C:\\Users\\KimoStore\\Desktop\\spring-react\\gogo (1)\\ITI_Project_Indeed\\testExample.txt");
+        fileUpload.sendKeys("C:\\Users\\KimoStore\\Desktop\\spring-react\\gogo (1)\\ITI_Project_FreeLance\\testExample.txt");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 

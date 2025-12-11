@@ -84,14 +84,4 @@ public class Register_Free_Lance_Test extends BaseTest{
         Assert.assertTrue(registerFreeLancePage.registerWithRegisteredEmailData());
     }
 
-
-    @Test
-    public void testtest() throws InterruptedException {
-        registerFreeLancePage.test("\n" +
-                "                                        43 (Austria)\n" +
-                "                                    ");
-
-        Thread.sleep(50000);
-    }
-
 }
